@@ -1,0 +1,94 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+.login-block{
+    background: #383838;  /* Buscadores antiguos */
+background: -webkit-linear-gradient(to bottom, #383838, #383838);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #383838, #383838); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+padding : 120px 0;
+}
+/*Imagenes que se encuentran en el carrusel*/
+img.grande{
+    width: 1000px; height: 500px;
+  }
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:0 10px 10px 0;}
+.carousel-caption{text-align:left; left:5%;}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#383838;}
+.login-sec .copy-text a{color:#383838;}
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #383838;}
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#383838; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #383838; color:#fff; font-weight:600;}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:5px;}
+.banner-text h2{color:rgb(3, 3, 3); font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:rgb(107, 26, 26); display:block; margin-top:20px; border-radius:3px;}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+}
+.tab-content{
+  background: #383838;
+    line-height: 25px;
+    border: 1px solid #383838;
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    
+    color:#383838;
+    border-radius:0;
+    transition:background 0.20s linear;
+}
+
+.inicio {
+  border: inherit;
+  color: inherit;
+}
+
+

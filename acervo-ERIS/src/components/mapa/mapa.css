@@ -1,0 +1,103 @@
+.leaflet-container {
+  
+    height: 100vh;
+  }
+  
+  .leaflet-div-icon {
+    background: none !important;
+    border: none !important;
+  }
+  
+  .cluster-marker {
+    color: #fff;
+    background: #596D4F;
+    border-radius: 50%;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #046d1e; 
+  border-color: #09090A; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #088a13; 
+  border-color: #09090A; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #2b6e04; 
+  border-color: #09090A; 
+} 
+ 
+.btn-sample .badge { 
+  color: #0f8005; 
+  background-color: #FFFFFF; 
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #eb8705 !important;
+  border-color: #eb8705;
+}
+.btn-secondary {
+  background-color: #eb8705 !important;
+  border-color: #eb8705;
+}
+.input-date {
+background-color: transparent;
+background: inherit;
+border-color: #eb8705;
+color: #fafafa;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
