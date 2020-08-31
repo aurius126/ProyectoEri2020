@@ -70,7 +70,6 @@ const onSubmit = async data => {
         <div className={classes.toolbar} />
         
     <form onSubmit={handleSubmit(onSubmit)}>
-    <onSubmit/>
       <p className="h4 mb-4">Ingresa una nueva imágen</p>
       <div className="form-row mb-4">
       <div class="col">
@@ -158,7 +157,7 @@ const onSubmit = async data => {
         </span>}
         </div>
         </div>
-      <input type="submit" />
+      <button type="submit" class="btn btn-outline-warning btn-lg btn-block">Subir imagen</button>
     </form>  
       </main>
       

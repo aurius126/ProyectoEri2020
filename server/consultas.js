@@ -43,6 +43,17 @@ app.get("/foto/:fechai/:fechaf", async(req, res) => {
     }
 });
 
+//editar
+app.put("/foto/:id", async(req, res) => {
+    try {
+        const {id} = req.params;
+        const {nombre, fecha, norte, sur, este, oeste} = req.body;
+        const borrarFotos = await pool.query("UPDATE fotos SET nombre = $1, fecha=$2, norte=$3, sur=$4, este=$5, oeste=$6 where ID = $7", [nombre, fecha, norte, sur, este, oeste, id]);
+        res.json("Se actualizo la foto");
+    } catch (err) {
+        console.error(err.message);
+    }
+});
 
 //borrar foto
 app.delete("/foto/:id", async(req, res) => {

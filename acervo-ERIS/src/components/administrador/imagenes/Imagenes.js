@@ -3,9 +3,10 @@ import MaterialTable from 'material-table';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import swal from 'sweetalert';
-
-
-
+import { Typography } from '@material-ui/core';
+import { useForm } from "react-hook-form";
+import Alert from '@material-ui/lab/Alert';
+import EDIT from './editarFoto';
 //Diseño para los elementos de las pantalla
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,6 +57,7 @@ export default function MiniDrawer() {
       { title: 'Sur', field: 'sur' },
       { title: 'Este', field: 'este' },
       { title: 'Oeste', field: 'oeste' },
+      { title: 'Editar', field: 'editar' },
       { title: 'Eliminar', field: 'eliminar' },
     ]
   });
@@ -98,11 +100,12 @@ export default function MiniDrawer() {
     }
   }
 
+
   return (
     <div className={classes.root}>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        {/* Tabla con la libreria Material table */}
+        
         <MaterialTable
         // Titulo de la tabla 
       title="Fotografías"
@@ -119,6 +122,7 @@ export default function MiniDrawer() {
                         sur: foto.sur,
                         este: foto.este,
                         oeste: foto.oeste,
+                        editar: <EDIT foto={foto}/>,
                         eliminar: <button className="btn btn-danger" onClick={()=> borrarFoto(foto.id)}>Eliminar</button>
                       }
                     ))}
